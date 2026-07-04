@@ -30,6 +30,17 @@ The platform provides **MITRE ATT&CK mapping**, **kill-chain correlation**, **au
 
 ---
 
+## 📸 Screenshots
+
+### Analysis Engine & Threat Timeline
+![Analysis Dashboard](screenshots/dashboard.png)
+![Attack Timeline](screenshots/timeline.png)
+
+### SOC Analytics
+![Analytics Dashboard](screenshots/analytics.png)
+
+---
+
 ## ✨ Key Features
 
 - 🔍 **Hybrid Threat Detection** — 3-layer pipeline (Rule + ML + LLM) for comprehensive coverage
