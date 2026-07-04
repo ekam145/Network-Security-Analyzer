@@ -198,7 +198,7 @@ Use the included `sample_attack_logs.txt` to test the system:
 
 ## ⚠️ Security Note
 
-- The `.env` file containing your API key is **not committed** to version control (listed in `.gitignore`).
+- Sensitive files containing API keys (like `.env`) are **not committed** to version control for security purposes. If you are deploying this yourself, you must provide your own API keys.
 - Firewall scripts are generated as **recommendations only** — they require manual review and execution (Human-in-the-Loop policy).
 
 ---
