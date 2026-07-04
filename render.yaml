@@ -1,0 +1,23 @@
+services:
+  # 1. Flask Backend API
+  - type: web
+    name: soc-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd backend && gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false # User must provide this in the Render dashboard
+
+  # 2. Streamlit Frontend Dashboard
+  - type: web
+    name: soc-frontend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd frontend && streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: BACKEND_URL
+        fromService:
+          name: soc-backend
+          type: web
+          property: url

@@ -1,0 +1,53 @@
+# Environment & secrets
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs (keep sample, ignore runtime logs)
+*.log
+!sample_attack_logs.txt
+
+# Database (auto-generated)
+*.db
+
+# LaTeX build artifacts
+*.aux
+*.toc
+*.out
+
+# Report PDFs (large binary files)
+*.pdf
+
+# PowerPoint
+*.pptx
+
+# Deprecated backups
+*DEPRECATED*
+
+# Pickle model (large binary, auto-regenerated)
+backend/models/anomaly_model.pkl

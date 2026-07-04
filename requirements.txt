@@ -1,0 +1,15 @@
+# Core Backend
+flask==3.1.*
+flask-cors==5.*
+python-dotenv==1.*
+groq==0.*
+gunicorn==21.*
+
+# Machine Learning
+scikit-learn==1.*
+numpy==1.*
+
+# Frontend
+streamlit==1.*
+requests==2.*
+pandas==2.*
